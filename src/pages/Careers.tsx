@@ -8,7 +8,6 @@ import {
   Clock,
   Shield,
   Users,
-  MapPin,
   ArrowRight
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
@@ -43,39 +42,6 @@ const benefits = [
     icon: Users,
     title: "Team Environment",
     description: "Collaborative and supportive workplace culture"
-  }
-];
-
-const openPositions = [
-  {
-    title: "Civil Engineer",
-    department: "Contracting Division",
-    location: "Doha, Qatar",
-    type: "Full-time"
-  },
-  {
-    title: "Project Manager",
-    department: "Project Support",
-    location: "Doha, Qatar",
-    type: "Full-time"
-  },
-  {
-    title: "Facility Manager",
-    department: "Facility Management",
-    location: "Doha, Qatar",
-    type: "Full-time"
-  },
-  {
-    title: "Heavy Equipment Operator",
-    department: "Equipment Rental",
-    location: "Doha, Qatar",
-    type: "Full-time"
-  },
-  {
-    title: "Logistics Coordinator",
-    department: "Transportation Division",
-    location: "Doha, Qatar",
-    type: "Full-time"
   }
 ];
 
@@ -151,35 +117,16 @@ const Careers = () => {
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto space-y-4">
-            {openPositions.map((job, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-6 shadow-soft border border-border/50 hover-lift flex flex-col md:flex-row md:items-center justify-between gap-4"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-navy rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Briefcase className="w-6 h-6 text-gold" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-navy text-lg">{job.title}</h3>
-                    <p className="text-muted-foreground text-sm">{job.department}</p>
-                    <div className="flex items-center gap-4 mt-2 text-sm text-muted-foreground">
-                      <span className="flex items-center gap-1">
-                        <MapPin className="w-4 h-4" />
-                        {job.location}
-                      </span>
-                      <span className="px-2 py-1 bg-gold/10 text-gold-dark rounded-full text-xs">
-                        {job.type}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <Button variant="outline" className="flex-shrink-0">
-                  Apply Now
-                </Button>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-card rounded-xl p-12 shadow-soft border border-border/50 text-center">
+              <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
+                <Briefcase className="w-8 h-8 text-muted-foreground" />
               </div>
-            ))}
+              <h3 className="font-semibold text-navy text-xl mb-2">No Vacancy Available Now</h3>
+              <p className="text-muted-foreground">
+                We currently don't have any open positions. Please check back later or submit your CV for future opportunities.
+              </p>
+            </div>
           </div>
         </div>
       </section>
