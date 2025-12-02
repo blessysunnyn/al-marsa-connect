@@ -1,12 +1,22 @@
-import client1 from "@/assets/client-1.png";
-import client2 from "@/assets/client-2.png";
-import client3 from "@/assets/client-3.png";
+import larsenToubro from "@/assets/clients/larsen-toubro.png";
+import nakheel from "@/assets/clients/nakheel.png";
+import butec from "@/assets/clients/butec.png";
+import bahadir from "@/assets/clients/bahadir.png";
+import ceprotec from "@/assets/clients/ceprotec.png";
+import swanGlobal from "@/assets/clients/swan-global.png";
+import qtcg from "@/assets/clients/qtcg.png";
+import redco from "@/assets/clients/redco.png";
 
 const ClientSlider = () => {
   const clients = [
-    { src: client1, alt: "Construction Partner" },
-    { src: client2, alt: "Oil & Gas Partner" },
-    { src: client3, alt: "Government Projects" },
+    { src: larsenToubro, alt: "Larsen & Toubro" },
+    { src: nakheel, alt: "Nakheel Landscapes" },
+    { src: butec, alt: "BUTEC" },
+    { src: bahadir, alt: "Bahadir Construction" },
+    { src: ceprotec, alt: "CEPROTEC" },
+    { src: swanGlobal, alt: "Swan Global" },
+    { src: qtcg, alt: "QTCG" },
+    { src: redco, alt: "Redco International" },
   ];
 
   // Duplicate for seamless loop
