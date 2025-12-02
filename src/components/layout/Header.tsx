@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,9 +29,9 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               +974 XXXXXXXX
             </a>
-            <a href="mailto:info@almarsa.com.qa" className="flex items-center gap-2 hover:text-gold transition-colors">
+            <a href="mailto:info@almarsa.com" className="flex items-center gap-2 hover:text-gold transition-colors">
               <Mail className="w-4 h-4" />
-              info@almarsa.com.qa
+              info@almarsa.com
             </a>
           </div>
           <p className="text-gold-light font-medium">Established in 2015 | Doha, Qatar</p>

@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 30% 15%;
 
-    --primary: 215 50% 23%;
+    --primary: 330 50% 30%;
     --primary-foreground: 45 100% 96%;
 
-    --secondary: 45 80% 55%;
+    --secondary: 45 70% 55%;
     --secondary-foreground: 220 30% 15%;
 
     --muted: 210 20% 94%;
     --muted-foreground: 220 15% 45%;
 
-    --accent: 45 80% 55%;
+    --accent: 45 70% 55%;
     --accent-foreground: 220 30% 15%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,29 +32,29 @@
 
     --border: 210 20% 88%;
     --input: 210 20% 88%;
-    --ring: 215 50% 23%;
+    --ring: 330 50% 30%;
 
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --navy: 215 50% 23%;
-    --navy-light: 215 40% 35%;
-    --navy-dark: 215 55% 15%;
-    --gold: 45 80% 55%;
-    --gold-light: 45 70% 70%;
-    --gold-dark: 45 85% 45%;
+    --navy: 330 50% 30%;
+    --navy-light: 330 40% 45%;
+    --navy-dark: 330 55% 20%;
+    --gold: 45 70% 55%;
+    --gold-light: 45 60% 70%;
+    --gold-dark: 45 75% 45%;
     --cream: 45 30% 96%;
     --slate: 220 15% 45%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(215 55% 15%) 0%, hsl(215 50% 28%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(45 80% 55%) 0%, hsl(45 85% 45%) 100%);
-    --gradient-overlay: linear-gradient(180deg, hsla(215, 55%, 15%, 0.9) 0%, hsla(215, 50%, 23%, 0.8) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(330 55% 20%) 0%, hsl(330 50% 35%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 70% 55%) 0%, hsl(45 75% 45%) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsla(330, 55%, 20%, 0.9) 0%, hsla(330, 50%, 30%, 0.8) 100%);
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsla(215, 50%, 23%, 0.1);
-    --shadow-elevated: 0 12px 40px -12px hsla(215, 50%, 23%, 0.2);
-    --shadow-gold: 0 4px 20px -4px hsla(45, 80%, 55%, 0.3);
+    --shadow-soft: 0 4px 20px -4px hsla(330, 50%, 30%, 0.1);
+    --shadow-elevated: 0 12px 40px -12px hsla(330, 50%, 30%, 0.2);
+    --shadow-gold: 0 4px 20px -4px hsla(45, 70%, 55%, 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -76,10 +76,10 @@
     --popover: 220 30% 12%;
     --popover-foreground: 210 20% 95%;
 
-    --primary: 45 80% 55%;
+    --primary: 45 70% 55%;
     --primary-foreground: 220 30% 10%;
 
-    --secondary: 215 40% 25%;
+    --secondary: 330 40% 35%;
     --secondary-foreground: 210 20% 95%;
 
     --muted: 220 25% 18%;
@@ -93,7 +93,7 @@
 
     --border: 220 25% 20%;
     --input: 220 25% 20%;
-    --ring: 45 80% 55%;
+    --ring: 45 70% 55%;
   }
 }
 

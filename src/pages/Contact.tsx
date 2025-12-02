@@ -208,8 +208,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-navy mb-1">Email</h3>
-                    <a href="mailto:info@almarsa.com.qa" className="text-muted-foreground hover:text-navy transition-colors">
-                      info@almarsa.com.qa
+                    <a href="mailto:info@almarsa.com" className="text-muted-foreground hover:text-navy transition-colors">
+                      info@almarsa.com
                     </a>
                   </div>
                 </div>
