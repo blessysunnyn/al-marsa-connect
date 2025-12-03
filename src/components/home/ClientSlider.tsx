@@ -1,26 +1,30 @@
-import larsenToubro from "@/assets/clients/larsen-toubro.png";
-import nakheel from "@/assets/clients/nakheel.png";
-import butec from "@/assets/clients/butec.png";
-import bahadir from "@/assets/clients/bahadir.png";
-import ceprotec from "@/assets/clients/ceprotec.png";
-import swanGlobal from "@/assets/clients/swan-global.png";
-import qtcg from "@/assets/clients/qtcg.png";
-import redco from "@/assets/clients/redco.png";
+import clientsComposite from "@/assets/clients-composite.jpg";
 
 const ClientSlider = () => {
-  const clients = [
-    { src: larsenToubro, alt: "Larsen & Toubro" },
-    { src: nakheel, alt: "Nakheel Landscapes" },
-    { src: butec, alt: "BUTEC" },
-    { src: bahadir, alt: "Bahadir Construction" },
-    { src: ceprotec, alt: "CEPROTEC" },
-    { src: swanGlobal, alt: "Swan Global" },
-    { src: qtcg, alt: "QTCG" },
-    { src: redco, alt: "Redco International" },
+  // Client names from the composite image for accessibility
+  const clientNames = [
+    "Midmac Contracting",
+    "BUTEC",
+    "Larsen & Toubro",
+    "Nakheel Landscapes",
+    "Al-Balagh Trading",
+    "Bahadir Construction",
+    "Bahadir Maltauro JV",
+    "CEPROTEC",
+    "Bandary Engineering",
+    "UCC UrbaCon",
+    "Galfar",
+    "Swan Global",
+    "CERTIS",
+    "GSS Group Security",
+    "QTCG",
+    "Al Wataniya Concrete",
+    "AG Middle East",
+    "Redco International",
+    "ROOTS Energy",
+    "Bin Omran Trading",
+    "KENTZ Engineers"
   ];
-
-  // Duplicate for seamless loop
-  const allClients = [...clients, ...clients, ...clients, ...clients];
 
   return (
     <section className="py-16 bg-muted overflow-hidden">
@@ -33,20 +37,14 @@ const ClientSlider = () => {
         </p>
       </div>
       
-      <div className="relative">
-        <div className="flex animate-slide">
-          {allClients.map((client, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 w-48 h-32 mx-8 bg-card rounded-lg shadow-soft flex items-center justify-center p-4 hover-lift"
-            >
-              <img
-                src={client.src}
-                alt={client.alt}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-          ))}
+      {/* Display the composite client image */}
+      <div className="container mx-auto px-4">
+        <div className="bg-card rounded-2xl shadow-soft p-8">
+          <img
+            src={clientsComposite}
+            alt={`Our clients: ${clientNames.join(", ")}`}
+            className="w-full h-auto object-contain max-h-[600px] mx-auto"
+          />
         </div>
       </div>
     </section>
