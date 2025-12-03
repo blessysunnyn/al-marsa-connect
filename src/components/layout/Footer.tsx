@@ -2,6 +2,15 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
+  const serviceLinks = [
+    { href: "/services/trading", label: "Trading Division" },
+    { href: "/services/contracting", label: "Contracting Division" },
+    { href: "/services/project-support", label: "Project Support" },
+    { href: "/services/facility-management", label: "Facility Management" },
+    { href: "/services/transportation", label: "Transportation" },
+    { href: "/services/equipment-rental", label: "Equipment Rental" },
+  ];
+
   return (
     <footer className="bg-navy text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
@@ -40,6 +49,7 @@ const Footer = () => {
               {[
                 { href: "/", label: "Home" },
                 { href: "/about", label: "About Us" },
+                { href: "/services", label: "All Services" },
                 { href: "/careers", label: "Careers" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
@@ -59,16 +69,14 @@ const Footer = () => {
           <div>
             <h4 className="font-serif font-semibold text-lg mb-6 text-gold">Our Services</h4>
             <ul className="space-y-3 text-sm">
-              {[
-                "Trading Division",
-                "Contracting Division",
-                "Project Support",
-                "Facility Management",
-                "Transportation",
-                "Equipment Rental",
-              ].map((service) => (
-                <li key={service} className="text-primary-foreground/80">
-                  {service}
+              {serviceLinks.map((link) => (
+                <li key={link.href}>
+                  <Link 
+                    to={link.href} 
+                    className="text-primary-foreground/80 hover:text-gold transition-colors duration-300"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>

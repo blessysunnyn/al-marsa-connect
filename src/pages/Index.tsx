@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import HeroSection from "@/components/home/HeroSection";
+import VideoHeroSlider from "@/components/home/VideoHeroSlider";
 import ServicesSection from "@/components/home/ServicesSection";
 import ClientSlider from "@/components/home/ClientSlider";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
@@ -16,7 +16,7 @@ const Index = () => {
         <meta name="description" content="Al Marsa Trading & Contracting - One of Qatar's most reliable service providers delivering excellence in trading, contracting, and project support since 2015." />
       </Helmet>
       
-      <HeroSection />
+      <VideoHeroSlider />
       <ServicesSection />
       <ClientSlider />
       <WhyChooseUs />
